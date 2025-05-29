@@ -1,0 +1,147 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  /* Matching About section card background */
+  background-color: var(--color-bg-secondary); /* Assuming var(--color-bg-secondary) is your light card background */
+  /* Matching About section card subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter, more subtle shadow */
+  padding: 20px 22px; /* Consistent padding */
+  max-width: 320px; /* Adjust max-width to match About cards if they have a specific width */
+  min-height: 400px; /* Set a minimum height to enforce size consistency, adjust as needed */
+  margin: 0 auto;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add transition for hover effect */
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.image {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 180px; /* Fixed height for project images/GIFs */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.02); /* Subtle zoom effect */
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--color-text-primary); /* Use primary text color for titles */
+  margin-bottom: 8px;
+}
+
+.description {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: justify;
+  color: var(--color-text-secondary); /* Use secondary text color for descriptions */
+  line-height: 1.5;
+  flex-grow: 1; /* Allow description to take up available space, pushing skills/links down */
+}
+
+.skills {
+  width: 100%;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+.skill {
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 100px;
+  background-color: var(--color-primary); /* Use a consistent primary color for skill bubbles */
+  padding: 4px 12px;
+  color: var(--color-text-light); /* Assuming this is a light color for text on primary background */
+  white-space: nowrap;
+}
+
+.links {
+  width: 100%;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff; /* White text */
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #000000; /* Black background */
+  border: 1px solid #000000; /* Solid black border */
+  padding: 8px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease-in-out;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.link:hover {
+  color: #b1b1b1; /* Black text on hover for contrast */
+  border-color: #D3D3D3; /* Light Gray border on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Keep a subtle shadow on hover */
+}
+
+/* Mobile styles */
+@media screen and (max-width: 830px) {
+  .container {
+    padding: 18px 18px;
+    max-width: 100%;
+    min-height: auto; /* Remove min-height for mobile to allow flexible sizing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .image {
+    margin-bottom: 15px;
+    height: 150px; /* Adjust image height for mobile */
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .skills {
+    gap: 6px;
+    margin-top: 14px;
+  }
+
+  .skill {
+    font-size: 13px;
+    padding: 3px 10px;
+  }
+
+    .links {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .link {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
