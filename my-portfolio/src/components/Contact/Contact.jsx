@@ -7,11 +7,12 @@ export const Contact = () => {
     <footer id="contact" className={styles.container}>
       <div className={styles.contactInfo}>
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:siddhartha.gurram@example.com">siddhartha.gurram@example.com</a></p>
-        <p>Phone: <a href="tel:+911234567890">+91-1234567890</a></p>
+        <p>Email: <a href="mailto:siddharth@workwebmail.com">siddharth@workwebmail.com</a></p>
+        <p>Phone: <a href="tel:+19408430660">+1-940-843-0660</a></p>
 
-        <a href="/resume.pdf" download className={styles.resumeButton}>
-          Download My Resume
+
+        <a href="/Resume.pdf" download className={styles.resumeButton}>
+          My Resume
         </a>
       </div>
 
@@ -24,5 +25,5 @@ export const Contact = () => {
         </div>
       </div>
     </footer>
-  );
+  );
 };
