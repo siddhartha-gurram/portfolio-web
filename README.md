@@ -1,4 +1,4 @@
-**🚀Dharmika's Portfolio Website using React**
+**🚀Siddhartha's Portfolio Website using React**
 
 This is a personal portfolio project built using React.js as part of the MERN stack. The portfolio showcases my projects, skills, certifications, experience, and contact information. Feel free to explore the source code, set it up locally, or use it for inspiration.
 
@@ -15,4 +15,4 @@ Frontend: React.js, HTML, CSS, JavaScript
 
 **Deployment**: Netlify
 
-You can view the live version of the portfolio here : https://dharmika-portfolio.netlify.app/
+You can view the live version of the portfolio here : https://siddharthagurram-portfolio.netlify.app/
